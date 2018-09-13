@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Discount>
+    <product>
+        <id>1</id>
+        <name>Macbook Pro 15 inch 2018</name>
+        <quantity>5</quantity>
+        <price>4000</price>
+        <currency>USD</currency>
+        <amount>10</amount>
+    </product>
+    <product>
+        <id>2</id>
+        <name>Asus Zenbook 2018 UX540</name>
+        <quantity>10</quantity>
+        <price>2999</price>
+        <currency>USD</currency>
+        <amount>20</amount>
+    </product>
+    <product>
+        <id>3</id>
+        <name>	Xiaomi Mi Mix2S 128GB</name>
+        <quantity>40</quantity>
+        <price>799</price>
+        <currency>USD</currency>
+        <amount>25</amount>
+    </product>
+    <product>
+        <id>1</id>
+        <name>Dell Monitor U2417h</name>
+        <quantity>15</quantity>
+        <price>215</price>
+        <currency>USD</currency>
+        <amount>15</amount>
+    </product>
+</Discount>

@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="./resetForm.js"></script>
+    <script type="text/javascript" src="./checkform.js"></script>
+    <title>
+        "YOUR DEMO WEB SITE BY HTML5"
+    </title>
+</head>
+
+<body>
+    <h1>List of discount product that we offer for you today</h1>
+    <em>Hopefully you can pick the one you're wishing for</em>
+    <table id="product_list">
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Currency</th>
+            <th>Discount</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Macbook Pro 15 inch 2018</td>
+            <td>5</td>
+            <td>4000</td>
+            <td>USD</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Asus Zenbook 2018 UX540</td>
+            <td>10</td>
+            <td>2999</td>
+            <td>USD</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Xiaomi Mi Mix2S 128GB</td>
+            <td>40</td>
+            <td>799</td>
+            <td>USD</td>
+            <td>25%</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Dell Monitor U2417h</td>
+            <td>15</td>
+            <td>215</td>
+            <td>USD</td>
+            <td>15%</td>
+        </tr>
+    </table>
+
+    <h2>You can get more discount with your discount code at here: </h2>
+    <form id="search_discount" onsubmit="return false">
+        Your product ID:<br><input onkeydown="" type="text" placeholder="enter id" id="productID" maxlength="1"
+            required><br>
+        <br>
+        <p id="checkId"></p>
+        Your discount code:<br> <input type="text" placeholder="enter your code" id="dis_code" maxlength="3" required><br>
+        <br>
+        <input type="submit" value="Submit" onclick="validateForm()">
+        <input type="button" value="Reset" onclick="resetForm()">
+    </form>
+
+    <h3 id="summary" style="color:brown">SUMMARY PAYMENT:
+        <p id="msg_confirmation" style="color:coral"></p>
+        <p id="total_price" style="color:blue"></p>
+        <p id="total_price_with_discount" style="color:blue"></p>
+    </h3>
+</body>
+
+</html>
