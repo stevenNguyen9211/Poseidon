@@ -14,7 +14,7 @@ function checkProductIDfield() {
             document.getElementById('checkId').setAttribute("style", "color:red");
             return false;
         } else {
-            if (parseInt(getProductId) > 4) {
+            if (parseInt(getProductId) > 4 || parseInt(getProductId) <=0) {
                 document.getElementById('checkId').innerHTML = "Not available product"
                 document.getElementById('checkId').setAttribute("style", "color:red");
                 return false;
@@ -51,7 +51,7 @@ function validateForm() {
 
         if (getCodeId == "") {
             document.getElementById('msg_confirmation').innerHTML = "You're not using the discount code:";
-            summaryPrice = getTotalSummary();
+            let summaryPrice = getTotalSummary();
             document.getElementById('total_price').innerHTML = summaryPrice;
         } else {
             let summaryPriceAfterDiscount;

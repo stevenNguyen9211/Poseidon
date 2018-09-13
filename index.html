@@ -65,7 +65,6 @@
         Your discount code:<br> <input type="text" placeholder="enter your code" id="dis_code" maxlength="3" required><br>
         <br>
         <input type="submit" value="Submit" onclick="validateForm()">
-        <input type="button" value="Reset" onclick="resetForm()">
     </form>
 
     <h3 id="summary" style="color:brown">SUMMARY PAYMENT:
@@ -73,6 +72,8 @@
         <p id="total_price" style="color:blue"></p>
         <p id="total_price_with_discount" style="color:blue"></p>
     </h3>
+
+    <button onclick="resetAll()">Reset</button>
 </body>
 
 </html>
